@@ -4,58 +4,39 @@
     <meta charset="UTF-8">
     <title>My Page</title>
 
-
-    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
     <div class="twoblocks">
         <div class="firstblock">
             <div  id="row">
                 <div>
-                    <input class="input" type="text" name="input" placeholder="Назва товару">
-                    <button class="but-add">Додати</button>
+                    <form action="javascript:void(0);">
+                        <input class="input" type="text" name="input" placeholder="Назва товару">
+                        <button class="but-add">Додати</button>
+                    </form>
                 </div>
             </div>
-            <div class="row">
-                <div class="frow">
-                    <span>Помідори</span>
-                </div>
-                    <div class="srow">
-                        <button class="button-minus">-</button>
-                        <span class="grey1">1</span>
-                        <button class="button-plus">+</button>
+            <div class="list">
+                <div class="item">
+                    <div class="row">
+                        <div class="frow">
+                            <span class="title"></span>
+                            <input class="new-name hide" type="text">
+                        </div>
+                            <div class="srow">
+                                <button class="button-minus">-</button>
+                                <span class="grey1">1</span>
+                                <button class="button-plus">+</button>
+                            </div>
+                            <div class="trow">
+                                <button class="but-buy">Куплено</button>
+                                <button class="unbuy hide">Не куплено</button>
+                                <button class="but-x">x</button>
+                            </div>
                     </div>
-                    <div class="trow">
-                        <button class="but-buy">Куплено</button>
-                        <button class="but-x">x</button>
-                    </div>
-            </div>
-            <div class="row">
-                <div class="frow">
-                    <span>Печиво</span>
-                </div>
-                <div class="srow">
-                    <button class="button-minus">-</button>
-                    <span class="grey1">1</span>
-                    <button class="button-plus">+</button>
-                </div>
-                <div class="trow">
-                    <button class="but-buy">Куплено</button>
-                    <button class="but-x">x</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="frow">
-                    <span>Сир</span>
-                </div>
-                <div class="srow">
-                    <button class="button-minus">-</button>
-                    <span class="grey1">1</span>
-                    <button class="button-plus">+</button>
-                </div>
-                <div class="trow">
-                    <button class="but-buy">Куплено</button>
-                    <button class="but-x">x</button>
                 </div>
             </div>
         </div>
@@ -64,23 +45,20 @@
                 <h3>Залишилося</h3>
             </div>
             <div class="row">
-                    <span class="bgr">
-                        <span>Помідори</span>
-                        <span class="remainder">1</span>
-                    </span>
-                    <span class="bgr">
-                        <span>Печиво</span>
-                        <span class="remainder">1</span>
-                    </span>
-                    <span class="bgr">
-                        <span>Сир</span>
-                        <span class="remainder">1</span>
-                    </span>
+                <div class="list-available">
+                    <div class="item-available">
+                        <span class="bgr">
+                            <span class="title">Помідори</span>
+                            <span class="remainder">1</span>
+                        </span>
+                    </div>
+                </div>
             </div>
             <div class="row">
                 <h3>Куплено</h3>
             </div>
             <div class="row">
+                <div class="list-bought"></div>
             </div>
         </div>
     </div>
